@@ -7,5 +7,5 @@ templates = Jinja2Templates(directory='templates')
 
 
 @router.get('/test')
-async def get_students_html(request: Request):
+async def test(request: Request):
     return templates.TemplateResponse(name='test.html', context={'request': request})
